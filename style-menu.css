@@ -1,0 +1,65 @@
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png");
+}
+
+.main {
+    position: relative;
+}
+
+.menu {
+    padding: 5px;
+}
+
+.menu__link {
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #c5c5c5;
+    opacity: 0.7;
+}
+
+.menu__link:hover,
+.menu_link:focus {
+    opacity: 1;
+}
+
+.checkbox {
+    display: none;
+}
+
+.menu-icon {
+    position: absolute;
+    display: block;
+    top: 30px;
+    width: 45px;
+    height: 9px;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    position: absolute;
+    content: "";
+    
+    width: 45px;
+    height: 9px;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+}
+
+.menu-icon::after {
+    top: 15px;
+}
+
+.menu-icon::before {
+    top: -15px;
+}
+
+.checkbox:checked + .menu-icon {
+    transform: scale(0.5);
+    transition: 0.25s;
+}
+
